@@ -3,7 +3,13 @@ from tkinter.ttk import *
 import time
 
 def start():
-    bar['value']+=10
+    tasks = 10
+    x=0
+    while(x<tasks):
+        time.sleep(1)
+        bar['value']+=10
+        x+=1
+        window.update_idletasks()
     
     
 window= Tk()
